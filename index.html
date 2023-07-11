@@ -23,7 +23,7 @@
             />
           </div>
           <div>
-            <input type="button" value="AC" onclick="inputEliment('')" />
+            <input type="button" value="AC" onclick="allClear('')" />
             <input type="button" value="DE" onclick="deleteElement('')" />
             <input type="button" value="." onclick="inputEliment('')" />
             <input type="button" value="/" onclick="inputEliment('7')" />
@@ -72,7 +72,7 @@
         document.getElementById("display").value = finalval;
       }
       function enterkey() {
-        if (event.key == "event") {
+        if (event.key == "Enter") {
           event.preventDefault();
           evaluateCal();
         }
