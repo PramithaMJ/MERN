@@ -19,7 +19,7 @@
           </div>
           <div>
             <input type="button" value="AC" onclick="inputEliment('')" />
-            <input type="button" value="DE" onclick="inputEliment('')" />
+            <input type="button" value="DE" onclick="deleteElement('')" />
             <input type="button" value="." onclick="inputEliment('')" />
             <input type="button" value="/" onclick="inputEliment('7')" />
           </div>
@@ -44,7 +44,7 @@
           <div>
             <input type="button" value="00" />
             <input type="button" value="0" />
-            <input type="button" value="0" />
+            <!-- <input type="button" value="0" /> -->
             <input type="button" value="=" />
           </div>
         </form>
@@ -59,6 +59,13 @@
       }
       function deleteElement(value) {
         var element = document.getElementById("display").value;
+        var afterSlice = element.slice(0, -1);
+        document.getElementById("display").value = afterSlice;
+      }
+      function evaluate() {
+        var finalval = eval(document.getElementById("display"));
+        document.getElementById("display").value = finalval;
+        
       }
     </script>
   </body>
