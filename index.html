@@ -19,7 +19,9 @@
               type="text"
               name="display"
               id="display"
-              onkeypress="enterkey"
+              onkeypress="enterkey(event)"
+              autofocus=""
+              oninput=""
             />
           </div>
           <div>
@@ -71,10 +73,16 @@
         var finalval = eval(document.getElementById("display"));
         document.getElementById("display").value = finalval;
       }
-      function enterkey() {
+      function enterkey(event) {
         if (event.key == "Enter") {
           event.preventDefault();
           evaluateCal();
+        }
+      }
+      function validate(event) {
+        var inputVal = event.target.value;
+        var validation = /^[0-9*+\-./]^$/;
+        if (!validation) {
         }
       }
     </script>
