@@ -18,28 +18,28 @@
             <input type="text" name="display" id="display" />
           </div>
           <div>
-            <input type="button" value="AC" onclick="inputEliment('')">/>
-            <input type="button" value="DE" onclick="inputEliment('')">/>
-            <input type="button" value="."  onclick="inputEliment('')">/>
-            <input type="button" value="/"  onclick="inputEliment('7')">/>
+            <input type="button" value="AC" onclick="inputEliment('')" />
+            <input type="button" value="DE" onclick="inputEliment('')" />
+            <input type="button" value="." onclick="inputEliment('')" />
+            <input type="button" value="/" onclick="inputEliment('7')" />
           </div>
           <div>
-            <input type="button" value="7" onclick="inputEliment('7')">
-            <input type="button" value="8" onclick="inputEliment('8')">/>
-            <input type="button" value="9" onclick="inputEliment('9')">/>
-            <input type="button" value="*" onclick="inputEliment('*')">/>
+            <input type="button" value="7" onclick="inputEliment('7')" />
+            <input type="button" value="8" onclick="inputEliment('8')" />
+            <input type="button" value="9" onclick="inputEliment('9')" />
+            <input type="button" value="*" onclick="inputEliment('*')" />
           </div>
           <div>
-            <input type="button" value="4" onclick="inputEliment('4')">/>
-            <input type="button" value="5" onclick="inputEliment('5')">/>
-            <input type="button" value="6" onclick="inputEliment('6')">/>
-            <input type="button" value="-" onclick="inputEliment('=')">/>
+            <input type="button" value="4" onclick="inputEliment('4')" />
+            <input type="button" value="5" onclick="inputEliment('5')" />
+            <input type="button" value="6" onclick="inputEliment('6')" />
+            <input type="button" value="-" onclick="inputEliment('=')" />
           </div>
           <div>
-            <input type="button" value="1" onclick="inputEliment('1')">/>
-            <input type="button" value="2" onclick="inputEliment('2')">/>
-            <input type="button" value="3" onclick="inputEliment('3')">/>
-            <input type="button" value="+" onclick="inputEliment('+')">/>
+            <input type="button" value="1" onclick="inputEliment('1')" />
+            <input type="button" value="2" onclick="inputEliment('2')" />
+            <input type="button" value="3" onclick="inputEliment('3')" />
+            <input type="button" value="+" onclick="inputEliment('+')" />
           </div>
           <div>
             <input type="button" value="00" />
@@ -53,6 +53,12 @@
     <script>
       function inputEliment(value) {
         document.getElementById("display").value = value;
+      }
+      function allClear(value) {
+        document.getElementById("display").value = value;
+      }
+      function deleteElement(value) {
+        var element = document.getElementById("display").value;
       }
     </script>
   </body>
