@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "appNode.js",
+  "scripts": {
+    "start": "nodemon appNode.js"
+  },
+  "author": "Pramitha",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
